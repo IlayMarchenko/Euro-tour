@@ -1,0 +1,644 @@
+/**********************************************************************************************************************************************************
+                                                                  Main Styles
+***********************************************************************************************************************************************************/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	color: #565252;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+section {
+	clear: both;
+}
+
+/********************************************************************************************************************************************************
+     																Header Styles
+*********************************************************************************************************************************************************/
+header {
+	background-image: url(../images/Stockholm.jpg);
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.header-text {
+	padding-top: 200px;
+	margin-left: 8.33%;
+}
+
+#header-title {
+	margin: 0;
+	background-color: rgba(254, 155, 53, 0.8);
+	max-width: 57%;
+	padding: 15px;
+	color: #171717;
+	font-weight: 400;
+	border-radius: 150px;
+
+}
+
+#two-buttons {
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+#two-buttons a {
+	text-decoration: none;
+	color: #171717;
+}
+
+/**********************************************************************************************************************************************************
+     															Navigations Styles
+***********************************************************************************************************************************************************/
+
+#motto {
+	float: left;
+	color: #171717;
+	font-weight: 400;
+	font-family: 'Source Serif Pro', serif;
+	font-size: 35px;
+	padding-left: 50px;
+	padding-top: 10px;
+}
+
+#nav-list {
+	float: right;
+	list-style: none;
+}
+
+#nav-list li {
+	display: inline-block;
+	margin-right: 40px;
+	padding-top: 20px;
+}
+
+#nav-list li a:link,
+#nav-list li a:visited {
+	text-decoration: none;
+	color: #171717;
+	transition: color 0.2s;
+}
+
+#nav-list li a:hover,
+#nav-list li a:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+nav {
+	background: rgba(184, 150, 154, 0.8);
+	height: 100px;
+	padding: 20px;
+
+}
+
+/**********************************************************************************************************************************************************
+    																Buttons Styles
+***********************************************************************************************************************************************************/
+
+.button:link,
+.button:visited {
+	display: inline-block;
+	padding: 10px 30px;
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 150px;
+	border: 2px solid #171717;
+	transition: background-color 0.3s;
+}
+
+.button:hover,
+.button:active {
+	background-color: rgb(255, 255, 255)
+}
+
+/*****************
+    Icons Styles
+******************/
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.icon-color { color: #ffc700; }
+
+/*******************
+   About us Styles
+********************/
+
+#about-us-section {
+	padding-top: 150px;
+	width: 100%;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/tourism-background.jpg");
+	background-size: 100%;
+	margin-bottom: 200px;
+}
+
+#about-us-title {
+	text-transform: uppercase;
+	font-weight: 200;
+	text-align: center;
+	margin-bottom: 70px;
+	font-size: 300%;
+	letter-spacing: 6px;
+	color: #000;
+	/*text-shadow:2px 2px 5px black;*/
+}
+
+#about-us-section div p {
+	font-size: 100%;
+	margin-top: 20px;
+	color: #000;
+	margin-bottom: 170px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	line-height: 200%;
+}
+
+#about-us-title:after {
+	display: block;
+	height: 2px;
+	background-color: #fff726;
+	content: " ";
+	width: 150px;
+	margin: 0 auto;
+	margin-top: 30px;
+
+}
+
+#about-us-section div p {
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+#about-us-section div i {
+	padding-left: 25%;
+}
+
+
+/**********************************************************************************************************************************************************
+   															Mobile aplication Styles
+***********************************************************************************************************************************************************/
+#mobile-app-section {
+	margin-top: 100px;
+}
+
+#application-photo {
+	max-width: 60%;
+	margin-left: 20%;
+
+}
+
+#mobile-app-section div {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+#mobile-app-section div h3 {
+	text-transform: uppercase;
+	font-weight: 200;
+	text-align: center;
+	margin-bottom: 70px;
+	font-size: 300%;
+	letter-spacing: 6px;
+	color: #171717;
+}
+
+#mobile-app-section div h3:after {
+	display: block;
+	height: 2px;
+	background-color: #497AB2;
+	content: " ";
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+#mobile-app-section div p {
+	margin-bottom: 10px;
+	color: #171717;
+}
+
+#mobile-app-section div img {
+	max-width: 500px;
+	margin-top: 35px;
+}
+
+/*********************************************************************************************************************************************************
+   																Places Styles
+**********************************************************************************************************************************************************/
+
+#places-section h3 {
+	text-shadow:5px 5px 10px black;
+	text-transform: uppercase;
+	font-weight: 200;
+	text-align: center;
+	margin-top: 150px;
+	margin-bottom: 70px;
+	font-size: 300%;
+	letter-spacing: 6px;
+	color: #fff;
+	padding-top: 120px;
+}
+
+#places-section h3:after {
+	display: block;
+	height: 2px;
+	background-color: #497AB2;
+	content: " ";
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.images-container {
+	list-style: none;
+	width: 100%
+
+}
+
+.images-container li {
+	display: block;
+	float: left;
+	width: 25%
+}
+
+.places-img {
+	width: 100%;
+	overflow: hidden;
+	background-color: #000;
+}
+
+.places-img img {
+	width: 100%;
+	height: auto;
+	transform: scale(1.2);
+	transition: transform 0.5s;
+	opacity: 0.7;
+}
+
+.places-img img:hover {
+	transform: scale(1.05);
+	opacity: 1;
+}
+
+.prompt {
+	position: relative;
+	transition: content 0.5s;
+}
+
+.prompt:hover:after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0; bottom: 0px; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(0,42,167,0.6); /* Полупрозрачный цвет фона */
+    color: #fff; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    font-family: 'Lobster', cursive; /* Гарнитура шрифта */
+    font-size: 30px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #fff; /* Параметры рамки */
+}
+
+#places-section div {
+	text-align: center;
+}
+
+#places-section div p {
+	text-shadow:5px 5px 10px black;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+#places-section {
+	background-image: url("../images/sunset-background2.png");
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+#places-section div {
+	padding-bottom: 150px; 
+}
+
+#last-conteiner {
+	margin-bottom: 150px;
+}
+
+
+/**********************************************************************************************************************************************************
+   																	Excursions Styles
+***********************************************************************************************************************************************************/
+.excursions-section {
+	width: 100%;
+}
+
+.excursions-section h3 {
+	text-transform: uppercase;
+	font-weight: 200;
+	text-align: center;
+	font-size: 300%;
+	letter-spacing: 6px;
+	color: #fff;
+	padding-bottom: 170px;
+	padding-top: 170px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/excursion-background.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.excursions-section h3:after {
+	display: block;
+	height: 2px;
+	background-color: #497AB2;
+	content: " ";
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.excursion-img {
+	padding-left: 30px;
+	padding-right: 30px;
+	transform: scale(1.1);
+	transition: transform 0.5s;
+}
+
+.excursion-img:hover {
+	transform: scale(1);
+	
+}
+
+.excursion-info h2 {
+	padding-bottom: 15px;
+	color: #000;
+	padding-top: 0px;
+}
+
+.excursion-info {
+	text-align: center;
+}
+
+
+.star-rate i {
+	color: #e6ff2b;
+	padding-bottom: 15px;
+}
+
+.description {
+	padding-top: 40px;
+	color: #000;
+}
+
+.excursion-price {
+	float: center;
+	text-align: center;
+	margin-left: 0px;
+	padding-top: 60px;
+}
+
+.price {
+	color: #000;
+	padding-bottom: 30px;
+}
+
+.button-excursion:link,
+.button-excursion:visited{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	background-color: #ff9d00;
+	border: 2px solid #000;
+	border-radius: 15px;
+	transition: background-color 0.5s;
+	font-size: 35px;
+}
+
+.button-excursion:hover,
+.button-excursion:active {
+	background-color: #c47900;
+}
+
+.time {
+	padding-top: 30px;
+}
+
+.excursion-padding {
+	padding-bottom: 150px;
+	background-color: #F1CACA;
+}
+
+#amsterdam-excursion {
+	padding-top: 150px;
+}
+
+/**********************************************************************************************************************************************************
+   																	Details Styles
+***********************************************************************************************************************************************************/
+
+#details-title {
+	text-transform: uppercase;
+	font-weight: 200;
+	text-align: center;
+	font-size: 300%;
+	letter-spacing: 6px;
+	color: #fff;
+	padding-bottom: 200px;
+	width: 100%;
+}
+
+#details-title:after {
+	display: block;
+	height: 2px;
+	background-color: #497AB2;
+	content: " ";
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+#details-section {
+	padding-top: 200px;
+	padding-bottom: 150px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/details-background.jpg');
+	background-attachment: fixed;
+}
+
+#details-text {
+	background-color: #C2978E;
+	padding-bottom: 100px;
+}
+
+.details-subsection {
+	padding: 150px 45px;
+}
+
+.details-subsection i {
+	font-size: 60px;
+	padding-left: 160px;
+	padding-bottom: 25px;
+	color: #fff;
+}
+
+.details-subsection p {
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+/**********************************************************************************************************************************************************
+   																Clients' feedbacks Styles
+***********************************************************************************************************************************************************/
+
+#feedbacks h3 {
+	text-transform: uppercase;
+	font-weight: 200;
+	text-align: center;
+	font-size: 300%;
+	letter-spacing: 6px;
+	color: #fff;
+	padding-bottom: 180px;
+	padding-top: 200px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/feedbacks-background.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#feedbacks h3:after {
+	display: block;
+	height: 2px;
+	background-color: #497AB2;
+	content: " ";
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+#feedbacks-div {
+	background-color: #F1CACA;
+	color: #000;
+	padding-bottom: 70px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+#feedbacks-div img {
+	width: 120px;
+	height: 120px;
+	border: 1px solid #fff;
+	border-radius: 150px;
+	display: block;
+	margin-bottom: 40px;
+	margin-left: 150px;
+}
+
+#feedbacks-div blockquote {
+	padding: 150px 30px;
+}
+
+
+/**********************************************************************************************************************************************************
+   																	Footer Styles
+***********************************************************************************************************************************************************/
+
+
+footer {
+	background-color: #000;
+}
+
+#content-container {
+	
+}
+
+#main-footer-content {
+
+}
+
+#footer-info {
+	display: inline-block;
+}
+
+#cities-footer {
+	display: inline-block;
+}
+
+#footer-logo {
+	padding-top: 10px;
+}
+
+#footer-logo img {
+	width: 200px;
+	height: 200px;
+	border: 2px solid #fff;
+	border-radius: 150px;
+	padding: 0;
+}
+
+#social-networks {
+	float: left;
+}
+
+#social-networks i {
+	font-size: 50px;
+	padding-left: 15px;
+	transition: color 0.3s;
+}
+
+#instagram:hover {
+	color: #be008f;
+}
+
+#facebook:hover {
+	color: #3B5894;
+}
+
+#youtube:hover {
+	color: #F80000;
+}
+
+#telegram:hover {
+	color: #2499C9;
+}
+
+#twitter:hover {
+	color: #1C9DEB;
+}
+
+.footer-city {
+	padding-left: 100px;
+}
+
+#Lviv {
+	padding-left: 50px;
+}
+
+#rights {
+	padding-left: 85%; 
+	padding-bottom: 20px;
+}
